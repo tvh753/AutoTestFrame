@@ -36,3 +36,4 @@ aaa.py
 /logs/
 /.pytest_cache/
 /temps/
+/tests/.odd/

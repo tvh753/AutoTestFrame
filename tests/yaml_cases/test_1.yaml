@@ -21,8 +21,8 @@ extract:
 
 #面向变量断言（必填）
 validate:
-  epuals:
-    name的值是七夕: ['${name}', "七夕"]
+  equals:
+    name的值是数码办公: ['${name}', "数码办公"]
 
 
 #支持数据驱动（选填）
