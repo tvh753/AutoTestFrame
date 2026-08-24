@@ -1,0 +1,19 @@
+name: 热加载使用示例  # 用的名称
+
+
+request: # 请求四要素
+  method: get
+  headers: { }
+  url: http://baidu.com
+  params:
+    s: index/index
+  data:
+    time: ${time()}  # 无参数函数
+    add: ${add(1,   2)} # 多参数函数
+    a: ${print(123)} # 单参数函数
+    b: ${print(${name})} # 使用变量的函数
+    c: ${random()}
+
+validate: # 不是面向响应断言，而是面向变量断言
+  equals:
+    name的值是七夕: [ '${name}', "七夕" ]

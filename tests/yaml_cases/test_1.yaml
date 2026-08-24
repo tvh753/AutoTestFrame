@@ -1,0 +1,29 @@
+#用例名称（必填）
+name: 第一个用例
+
+#alure报告定制（选填）
+feature: 商城首页模块
+story: 商城首页接口
+title: 商城首页接口请求成功
+
+#请求四要素（必填）
+request:
+  method: get
+  headers: { }
+  url: http://116.62.63.211/shop/api.php
+  params:
+    s: index/index
+  data: {}
+
+#变量提取，接口关联（选填）
+extract:
+  name: [json, $..name, 0]
+
+#面向变量断言（必填）
+validate:
+  epuals:
+    name的值是七夕: ['${name}', "七夕"]
+
+
+#支持数据驱动（选填）
+parametrize:
