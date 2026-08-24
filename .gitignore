@@ -32,3 +32,7 @@ Thumbs.db
 
 asd.yaml
 aaa.py
+/reports/
+/logs/
+/.pytest_cache/
+/temps/
